@@ -1,14 +1,13 @@
 package com.zlrx.javadevzed.lombok;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
-@Getter
-@Setter
-@ToString
-@RequiredArgsConstructor
+@Data
+//@Getter
+//@Setter
+//@ToString
+//@RequiredArgsConstructor
+//@EqualsAndHashCode
 class Person {
     private final String name;
     private int age;
