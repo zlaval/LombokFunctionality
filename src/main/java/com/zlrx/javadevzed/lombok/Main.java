@@ -1,5 +1,9 @@
 package com.zlrx.javadevzed.lombok;
 
+import lombok.extern.java.Log;
+import lombok.val;
+
+@Log
 public class Main {
 
     public static void main(String[] args) {
@@ -17,6 +21,10 @@ public class Main {
                 .squareMeter(30.6)
                 .storey(false).build();
 
+        LogExample logExample = new LogExample();
+        logExample.logMethod();
 
+        val me = new Person("Zalan");
+        System.out.println(me);
     }
 }
